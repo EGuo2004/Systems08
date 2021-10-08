@@ -24,7 +24,7 @@ char * mystrcpy( char *dest, char *source) {
 char * mystrncat( char *dest, char *source, int n) {
 	 int counter = 0;
 	 char *destcopy = dest;
-	 while(*dest){
+	 while(*destcopy){
 	 	destcopy++;
 	 }
 	 while(*source && (counter < n)) {
