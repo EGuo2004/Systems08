@@ -23,12 +23,11 @@ char * mystrcpy( char *dest, char *source) {
 
 char * mystrncat( char *dest, char *source, int n) {
 	 int counter = 0;
-	 char *destcopy = dest;
-	 while(*destcopy){
-	 	destcopy++;
+	 while(*dest){
+	 	dest++;
 	 }
 	 while(*source && (counter < n)) {
-	 	*(destcopy + counter) = *(source + counter);
+	 	*(dest + counter) = *(source + counter);
 		counter++;
 	 }
 	 return dest;
