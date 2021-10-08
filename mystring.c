@@ -23,11 +23,12 @@ char * mystrcpy( char *dest, char *source) {
 
 char * mystrncat( char *dest, char *source, int n) {
 	 int counter = 0;
+	 char *destcopy = dest;
 	 while(*dest){
-	 	dest++;
+	 	destcopy++;
 	 }
 	 while(*source && (counter < n)) {
-	 	*(dest + counter) = *(source + counter);
+	 	*(destcopy + counter) = *(source + counter);
 		counter++;
 	 }
 	 return dest;
@@ -52,9 +53,9 @@ int mystrcmp( char *s1, char *s2 ) {
 char * mystrchr( char *s, char c ) {
 	while(*s) {
 		if(*s == c) {
-			return *s;
+			return s;
 		}
 		s++;
 	}
-	 return (c ? NULL : s);
+	 return NULL;
 }
