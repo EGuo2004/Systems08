@@ -13,11 +13,11 @@ int mystrlen( char *s ) {
 
 char * mystrcpy( char *dest, char *source) {
 	char *destcopy = dest; 
-    while(destcopy == dest || *(source - 1)) {
+    do {
 		(*destcopy) = (*source);
 		source++;
 		destcopy++;
-	}
+	} while (*source);
 	return *dest;
 }
 
@@ -30,6 +30,7 @@ char * mystrncat( char *dest, char *source, int n) {
 	 	*(dest + counter) = *(source + counter);
 		counter++;
 	 }
+	 return *dest;
 }
 
 int mystrcmp( char *s1, char *s2 ) {
