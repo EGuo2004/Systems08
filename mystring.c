@@ -50,7 +50,7 @@ int mystrcmp( char *s1, char *s2 ) {
 
 char * mystrchr( char *s, char c ) {
 	while(*s) {
-		if(*s == *c) {
+		if(*s == c) {
 			return *s;
 		}
 		s++;
