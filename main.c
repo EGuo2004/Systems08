@@ -23,14 +23,14 @@ int main() {
   printf("[standard]:\t[%s]\n", strcpy(s1, s2) );
   printf("[mine]:\t\t[%s]\n", mystrcpy(s1, s2) );
 
-  printf("\nTesting strncpy(s1, s3, 3):\n");
-  printf("[standard]:\t[%s]\n", strncpy(s1, s3, 3) );
-  printf("[mine]:\t\t[%s]\n", mystrncpy(s1, s3, 3) );
+  //printf("\nTesting strncpy(s1, s3, 3):\n");
+  //printf("[standard]:\t[%s]\n", strncpy(s1, s3, 3) );
+  //printf("[mine]:\t\t[%s]\n", mystrncpy(s1, s3, 3) );
   
-  printf("\nTesting strcat(s1, s3):\n");
-  printf("[standard]:\t[%s]\n", strcat(s1, s3) );
-  s1[5] = 0;
-  printf("[mine]:\t\t[%s]\n", mystrcat(s1, s3) );
+  //printf("\nTesting strcat(s1, s3):\n");
+  //printf("[standard]:\t[%s]\n", strcat(s1, s3) );
+  //s1[5] = 0;
+  //printf("[mine]:\t\t[%s]\n", mystrcat(s1, s3) );
 
   printf("\nTesting strncat(s1, s2, 3):\n");
   printf("[standard]:\t[%s]\n", strncat(s1, s2, 3) );
